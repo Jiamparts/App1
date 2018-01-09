@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="App1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ListView Height="320" Width="260">
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="2"/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+
+            <Rectangle Height="100" Width="100" Fill="Blue" />
+            <Rectangle Height="100" Width="100" Fill="Red" />
+            <Rectangle Height="100" Width="100" Fill="Yellow" />
+            <Rectangle Height="100" Width="100" Fill="Green" />
+            <Rectangle Height="100" Width="100" Fill="Gray" />
+            <Rectangle Height="100" Width="100" Fill="LightBlue" />
+            <Rectangle Height="100" Width="100" Fill="Pink" />
+            <Rectangle Height="100" Width="100" Fill="YellowGreen" />
+        </ListView>
+
+    </Grid>
+</Page>
